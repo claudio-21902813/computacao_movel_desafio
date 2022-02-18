@@ -16,4 +16,8 @@ class Pessoa(val nome:String,veiculos: List<Veiculo>,dataDeNascimento:Date,carta
 
     fun tirarCarta(){}
 
+    override fun toString(): String {
+        return super.toString()
+    }
+
 }
