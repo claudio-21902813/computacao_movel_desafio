@@ -1,4 +1,5 @@
-class Main {
-    fun main(){
-    }
+package pt.ulusofona.cm.kotlin.challenge
+
+fun main() {
+    print("ola")
 }
