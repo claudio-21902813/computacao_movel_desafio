@@ -1,4 +1,3 @@
 package pt.ulusofona.cm.kotlin.challenge.models
 
-class Motor {
-}
+class Motor(val cavalos:Int,val cilindrada:Int,val ligado:Boolean){}
