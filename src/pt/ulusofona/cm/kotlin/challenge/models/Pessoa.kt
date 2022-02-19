@@ -3,6 +3,18 @@ package pt.ulusofona.cm.kotlin.challenge.models
 import java.util.*
 
 class Pessoa(val nome:String,dataDeNascimento:Date){
+    private val veiculos : List<Veiculo>;
+    private val carta : Carta;
+    private val posicao : Posicao;
+
+    init {
+        carta = Carta()
+        posicao = Posicao(0,0)
+        veiculos = emptyList()
+    }
+    val _carta get() = carta
+    val _veiculos get() = veiculos
+    val _posicao get() = posicao
 
     fun comprarVeiculo(veiculo: Veiculo){}
 
