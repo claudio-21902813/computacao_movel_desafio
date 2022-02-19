@@ -20,7 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="eade7f03-9255-44cd-9936-272043b7cb9c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/pt/ulusofona/cm/kotlin/challenge/models/Bicicleta.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/pt/ulusofona/cm/kotlin/challenge/models/Bicicleta.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pt/ulusofona/cm/kotlin/challenge/models/Motor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/pt/ulusofona/cm/kotlin/challenge/models/Motor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pt/ulusofona/cm/kotlin/challenge/models/Posicao.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/pt/ulusofona/cm/kotlin/challenge/models/Posicao.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pt/ulusofona/cm/kotlin/challenge/models/Veiculo.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/pt/ulusofona/cm/kotlin/challenge/models/Veiculo.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
