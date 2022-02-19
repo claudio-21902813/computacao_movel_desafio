@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eade7f03-9255-44cd-9936-272043b7cb9c" name="Default Changelist" comment="" />
+    <list default="true" id="eade7f03-9255-44cd-9936-272043b7cb9c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/pt/ulusofona/cm/kotlin/challenge/models/Pessoa.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/pt/ulusofona/cm/kotlin/challenge/models/Pessoa.kt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
