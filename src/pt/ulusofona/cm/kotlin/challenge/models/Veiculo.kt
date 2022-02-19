@@ -4,7 +4,16 @@ import pt.ulusofona.cm.kotlin.challenge.interfaces.Ligavel
 import pt.ulusofona.cm.kotlin.challenge.interfaces.Movimentavel
 import java.util.*
 
-class Veiculo(val identificador:String, val posicao:Posicao, dataDeAquisicao:Date): Movimentavel, Ligavel {
+class Veiculo(val identificador:String): Movimentavel, Ligavel {
+
+    private val posicao : Posicao;
+    private val dataDeAquisicao : Date;
+
+    init {
+        posicao = Posicao(0,0)
+        dataDeAquisicao = Date()
+    }
+
     fun requerCarta():Boolean{
         return false;
     }
