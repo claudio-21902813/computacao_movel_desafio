@@ -19,9 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="eade7f03-9255-44cd-9936-272043b7cb9c" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="eade7f03-9255-44cd-9936-272043b7cb9c" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -55,7 +53,12 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="pt.ulusofona.cm.kotlin.challenge.interfaces" />
+    </key>
   </component>
   <component name="RunManager" selected="Application.MainKt">
     <configuration name="MainKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
@@ -115,6 +118,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="225" y="64" width="1086" height="760" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1645219532400">
@@ -129,6 +133,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="215" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824/3840.0.1920.1040@0.0.1536.824" timestamp="1645219492691" />
+    <state x="4571" y="311" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog" timestamp="1645290635327">
+      <screen x="3840" y="0" width="1920" height="1040" />
+    </state>
+    <state x="4571" y="311" key="#org.jetbrains.kotlin.idea.refactoring.move.moveDeclarations.ui.MoveKotlinTopLevelDeclarationsDialog/0.0.1536.824/3840.0.1920.1040@3840.0.1920.1040" timestamp="1645290635327" />
     <state width="1493" height="211" key="GridCell.Tab.0.bottom" timestamp="1645224563015">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -145,5 +153,13 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="1493" height="211" key="GridCell.Tab.0.right/0.0.1536.824/3840.0.1920.1040@0.0.1536.824" timestamp="1645224563015" />
+    <state x="4301" y="165" key="SettingsEditor" timestamp="1645291010053">
+      <screen x="3840" y="0" width="1920" height="1040" />
+    </state>
+    <state x="4301" y="165" key="SettingsEditor/0.0.1536.824/3840.0.1920.1040@3840.0.1920.1040" timestamp="1645291010053" />
+    <state x="4297" y="203" key="new project wizard" timestamp="1645290755497">
+      <screen x="3840" y="0" width="1920" height="1040" />
+    </state>
+    <state x="4297" y="203" key="new project wizard/0.0.1536.824/3840.0.1920.1040@3840.0.1920.1040" timestamp="1645290755497" />
   </component>
 </project>
