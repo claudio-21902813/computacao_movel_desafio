@@ -6,8 +6,8 @@ import java.util.*
 
 abstract class Veiculo(val identificador:String): Movimentavel, Ligavel {
 
-    private val posicao : Posicao;
-    private val dataDeAquisicao : Date;
+    public val posicao : Posicao;
+    public val dataDeAquisicao : Date;
 
     init {
         posicao = Posicao(0,0)
