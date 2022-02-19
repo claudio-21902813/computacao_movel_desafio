@@ -3,10 +3,9 @@ package pt.ulusofona.cm.kotlin.challenge.models
 import java.util.*
 
 class Pessoa(val nome:String,dataDeNascimento:Date){
-
     public var veiculos : List<Veiculo>;
     public var carta : Carta;
-    public val posicao : Posicao;
+    public var posicao : Posicao;
 
     init {
         carta = Carta()

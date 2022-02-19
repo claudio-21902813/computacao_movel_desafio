@@ -1,4 +1,5 @@
 package pt.ulusofona.cm.kotlin.challenge.exceptions
 
-class VeiculoDesligadoException {
-}
+import java.lang.Exception
+
+class VeiculoDesligadoException(message: String) : Exception(message)

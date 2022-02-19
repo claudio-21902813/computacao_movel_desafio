@@ -1,4 +1,5 @@
 package pt.ulusofona.cm.kotlin.challenge.exceptions
 
-class PessoaSemCartaException {
-}
+import java.lang.Exception
+
+class PessoaSemCartaException(message: String) : Exception(message)

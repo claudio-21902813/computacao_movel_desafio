@@ -1,4 +1,5 @@
 package pt.ulusofona.cm.kotlin.challenge.exceptions
 
-class AlterarPosicaoException {
-}
+import java.lang.Exception
+
+class AlterarPosicaoException(message: String) : Exception(message)

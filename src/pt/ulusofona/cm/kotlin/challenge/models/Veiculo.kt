@@ -1,5 +1,8 @@
 package pt.ulusofona.cm.kotlin.challenge.models
 
+import pt.ulusofona.cm.kotlin.challenge.exceptions.VeiculoDesligadoException
+import pt.ulusofona.cm.kotlin.challenge.exceptions.VeiculoLigadoException
+import pt.ulusofona.cm.kotlin.challenge.exceptions.VeiculoNaoEncontradoException
 import pt.ulusofona.cm.kotlin.challenge.interfaces.Ligavel
 import pt.ulusofona.cm.kotlin.challenge.interfaces.Movimentavel
 import java.util.*
@@ -22,9 +25,19 @@ abstract class Veiculo(val identificador:String): Movimentavel, Ligavel {
     }
 
     override fun ligar() {
+        try {
+
+        }catch(e : VeiculoLigadoException){
+
+        }
     }
 
     override fun desligar() {
+        try {
+
+        }catch(e : VeiculoDesligadoException){
+
+        }
     }
 
     override fun estaLigado(): Boolean {
