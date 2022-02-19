@@ -1,6 +1,9 @@
 package pt.ulusofona.cm.kotlin.challenge.models
 
-class Carro(val identificador:String,val motor : Motor):Ligavel,Movimentavel{
+import pt.ulusofona.cm.kotlin.challenge.interfaces.Ligavel
+import pt.ulusofona.cm.kotlin.challenge.interfaces.Movimentavel
+
+class Carro(val identificador:String,val motor : Motor): Ligavel, Movimentavel {
     override fun ligar() {
         TODO("Not yet implemented")
     }

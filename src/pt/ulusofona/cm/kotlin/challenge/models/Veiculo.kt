@@ -1,8 +1,10 @@
 package pt.ulusofona.cm.kotlin.challenge.models
 
+import pt.ulusofona.cm.kotlin.challenge.interfaces.Ligavel
+import pt.ulusofona.cm.kotlin.challenge.interfaces.Movimentavel
 import java.util.*
 
-abstract class Veiculo(val identificador:String, val posicao:Posicao, dataDeAquisicao:Date):Movimentavel,Ligavel{
+abstract class Veiculo(val identificador:String, val posicao:Posicao, dataDeAquisicao:Date): Movimentavel, Ligavel {
     fun requerCarta():Boolean{
         return false;
     }
