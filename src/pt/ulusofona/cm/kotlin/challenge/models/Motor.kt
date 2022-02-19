@@ -4,7 +4,7 @@ import pt.ulusofona.cm.kotlin.challenge.interfaces.Ligavel
 
 class Motor(val cavalos:Int,val cilindrada:Int): Ligavel {
 
-    protected val ligado : Boolean
+    private val ligado : Boolean
 
     init {
         ligado = false
