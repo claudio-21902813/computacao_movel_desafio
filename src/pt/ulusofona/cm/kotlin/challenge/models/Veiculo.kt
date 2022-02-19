@@ -22,6 +22,7 @@ abstract class Veiculo(val identificador:String): Movimentavel, Ligavel {
     }
 
     override fun moverPara(x: Int, y: Int) {
+        posicao.alterarPosicaoPara(x,y)
     }
 
     override fun ligar() {

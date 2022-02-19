@@ -4,23 +4,28 @@ import pt.ulusofona.cm.kotlin.challenge.interfaces.Ligavel
 import pt.ulusofona.cm.kotlin.challenge.interfaces.Movimentavel
 
 class Carro(identificador:String,val motor : Motor): Ligavel, Movimentavel, Veiculo(identificador) {
+
     override fun ligar() {
-        TODO("Not yet implemented")
+        motor.ligado = true
     }
 
     override fun desligar() {
-        TODO("Not yet implemented")
+        motor.ligado = false
     }
 
     override fun estaLigado(): Boolean {
-        TODO("Not yet implemented")
+        return motor.ligado
     }
 
     override fun moverPara(x: Int, y: Int) {
-        TODO("Not yet implemented")
+        posicao.alterarPosicaoPara(x,y)
     }
 
     override fun toString(): String {
-        return super.toString()
+        return  "Carro |" +
+                "$identificador" +
+                "$dataDeAquisicao" +
+                "Posicao" +
+                "${posicao}"
     }
 }
