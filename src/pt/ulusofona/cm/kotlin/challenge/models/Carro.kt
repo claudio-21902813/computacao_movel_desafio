@@ -31,7 +31,6 @@ class Carro(identificador:String,val motor : Motor): Ligavel, Veiculo(identifica
         return  "Carro |" +
                 "$identificador | " +
                 "${Data(dataDeAquisicao).converte()} | " +
-                "Posicao" +
                 "${posicao}"
     }
 }
