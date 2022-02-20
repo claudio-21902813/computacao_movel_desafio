@@ -29,8 +29,8 @@ class Carro(identificador:String,val motor : Motor): Ligavel, Veiculo(identifica
 
     override fun toString(): String {
         return  "Carro |" +
-                "$identificador" +
-                "$dataDeAquisicao" +
+                "$identificador | " +
+                "${Data(dataDeAquisicao).converte()} | " +
                 "Posicao" +
                 "${posicao}"
     }
