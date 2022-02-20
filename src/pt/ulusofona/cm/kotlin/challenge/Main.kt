@@ -11,10 +11,10 @@ import java.util.*
 
 fun testarBicicleta(){
     val bic = Bicicleta("LNupe")
-    print(bic)
-   // assertEquals(false,bic.estaLigado())
-    bic.ligar()
-    // assertEquals(true,bic.estaLigado())
+    val pessoa = Pessoa("me",Date())
+    pessoa.comprarVeiculo(bic)
+    pessoa.moverVeiculoPara("LNupe",0,5)
+    println(pessoa.veiculos)
 }
 
 fun main() {

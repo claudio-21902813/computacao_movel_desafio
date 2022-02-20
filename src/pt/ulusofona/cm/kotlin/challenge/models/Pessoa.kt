@@ -22,7 +22,7 @@ class Pessoa(val nome:String,val dataDeNascimento:Date){
 
     fun pesquisarVeiculo(identificador : String) : Veiculo?{
         for(veiculo in veiculos){
-            if(veiculo.identificador == identificador){
+            if(veiculo.identificador.equals(identificador)){
                 return veiculo
             }
         }
@@ -34,12 +34,13 @@ class Pessoa(val nome:String,val dataDeNascimento:Date){
     fun moverVeiculoPara(identificador: String,x:Int,y:Int){
         var idx = 0
         for(veiculo in veiculos){
-            if(!veiculo.identificador.equals(identificador)){
-                veiculos.get(idx).moverPara(x, y)
+            if(veiculo.identificador.equals(identificador)){
+                veiculos.get(idx).posicao.alterarPosicaoPara(x, y)
             }
             idx++
         }
     }
+
     fun temCarta():Boolean {return false}
 
     fun tirarCarta(){}
