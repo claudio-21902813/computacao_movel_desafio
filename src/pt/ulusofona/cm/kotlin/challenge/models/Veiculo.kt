@@ -17,7 +17,7 @@ abstract class Veiculo(val identificador:String): Movimentavel, Ligavel {
         dataDeAquisicao = Date()
     }
 
-    open fun requerCarta():Boolean{
+    fun requerCarta():Boolean{
         return false;
     }
 
