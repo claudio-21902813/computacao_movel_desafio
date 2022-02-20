@@ -10,6 +10,6 @@ class Posicao(var x:Int,var y:Int){
 
     override fun toString(): String {
         return " Posicao " +
-                "| x:$x | y:$y"
+                "| x:$x | y:$y".trim()
     }
 }
