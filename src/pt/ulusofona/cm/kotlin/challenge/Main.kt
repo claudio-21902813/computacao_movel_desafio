@@ -5,7 +5,7 @@ import java.text.SimpleDateFormat
 import java.time.LocalDate
 import java.time.Month
 import java.util.*
-import kotlin.test.assertEquals
+//import kotlin.test.assertEquals
 
 
 fun main() {
@@ -14,6 +14,6 @@ fun main() {
     val v = Carro("Teste", Motor(100,50))
     pessoa.comprarVeiculo(v)
 
-    assertEquals(null,pessoa.pesquisarVeiculo("teste"))
-    assertEquals(v,pessoa.pesquisarVeiculo("Teste"))
+    //assertEquals(null,pessoa.pesquisarVeiculo("teste"))
+    //assertEquals(v,pessoa.pesquisarVeiculo("Teste"))
 }
