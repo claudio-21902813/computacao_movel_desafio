@@ -7,7 +7,6 @@ import pt.ulusofona.cm.kotlin.challenge.interfaces.Movimentavel
 class Bicicleta(identificador:String):Veiculo(identificador) {
 
     override fun toString(): String {
-
         return "Bicicleta | " +
                 "$identificador | " +
                 "${Data(dataDeAquisicao).converte()} | " +

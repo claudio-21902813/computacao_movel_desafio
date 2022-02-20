@@ -42,9 +42,12 @@ class Pessoa(val nome:String,val dataDeNascimento:Date):Movimentavel{
         }
     }
 
-    fun temCarta():Boolean {return false}
+    fun temCarta():Boolean {
+        return carta != null
+    }
 
     fun tirarCarta(){}
+
     override fun moverPara(x: Int, y: Int) {
         posicao.alterarPosicaoPara(x, y)
     }
