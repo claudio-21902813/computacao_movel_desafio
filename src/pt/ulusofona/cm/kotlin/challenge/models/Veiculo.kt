@@ -8,13 +8,14 @@ import pt.ulusofona.cm.kotlin.challenge.interfaces.Movimentavel
 import java.util.*
 
 abstract class Veiculo(val identificador:String): Movimentavel, Ligavel {
-
-    public var posicao : Posicao;
-    public var dataDeAquisicao : Date;
+    var posicao : Posicao;
+    var dataDeAquisicao : Date;
+    var ligado : Boolean
 
     init {
         posicao = Posicao(0,0)
         dataDeAquisicao = Date()
+        ligado = false
     }
 
     open fun requerCarta():Boolean{
@@ -26,26 +27,20 @@ abstract class Veiculo(val identificador:String): Movimentavel, Ligavel {
     }
 
     override fun ligar() {
-        try {
-
-        }catch(e : VeiculoLigadoException){
-
+        if(estaLigado()){
+            throw VeiculoLigadoException("veiculo Ligado!")
         }
+        ligado = true
     }
 
     override fun desligar() {
-        try {
-
-        }catch(e : VeiculoDesligadoException){
-
+        if(!estaLigado()){
+            throw VeiculoDesligadoException("Veiculo Desligado!")
         }
+        ligado = false
     }
 
     override fun estaLigado(): Boolean {
-        return false
-    }
-
-    override fun toString(): String {
-        return super.toString()
+        return ligado == true
     }
 }

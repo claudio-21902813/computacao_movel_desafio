@@ -12,6 +12,9 @@ import java.util.*
 fun testarBicicleta(){
     val bic = Bicicleta("LNupe")
     print(bic)
+   // assertEquals(false,bic.estaLigado())
+    bic.ligar()
+    // assertEquals(true,bic.estaLigado())
 }
 
 fun main() {

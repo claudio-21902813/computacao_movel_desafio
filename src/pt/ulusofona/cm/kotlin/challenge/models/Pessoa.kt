@@ -7,11 +7,11 @@ import kotlin.collections.ArrayList
 
 class Pessoa(val nome:String,val dataDeNascimento:Date){
     public var veiculos : MutableList<Veiculo>;
-    public var carta : Carta;
+    public var carta : Carta?;
     public var posicao : Posicao;
 
     init {
-        carta = Carta()
+        carta = null
         posicao = Posicao(0,0)
         veiculos = ArrayList()
     }
@@ -19,6 +19,7 @@ class Pessoa(val nome:String,val dataDeNascimento:Date){
     fun comprarVeiculo(veiculo: Veiculo){
         veiculos.add(veiculo)
     }
+
     fun pesquisarVeiculo(identificador : String) : Veiculo?{
         for(veiculo in veiculos){
             if(veiculo.identificador == identificador){
@@ -29,6 +30,7 @@ class Pessoa(val nome:String,val dataDeNascimento:Date){
     }
 
     fun venderVeiculo(identificador: String,comprador:Pessoa){}
+
     fun moverVeiculoPara(identificador: String,x:Int,y:Int){
         var idx = 0
         for(veiculo in veiculos){
@@ -39,6 +41,7 @@ class Pessoa(val nome:String,val dataDeNascimento:Date){
         }
     }
     fun temCarta():Boolean {return false}
+
     fun tirarCarta(){}
 
     override fun toString(): String {
