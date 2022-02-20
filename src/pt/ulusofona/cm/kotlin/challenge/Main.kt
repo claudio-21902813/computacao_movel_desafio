@@ -14,7 +14,7 @@ fun testarBicicleta(){
     val pessoa = Pessoa("me",Date())
     pessoa.comprarVeiculo(bic)
     pessoa.moverVeiculoPara("LNupe",0,5)
-    println(pessoa.veiculos)
+    println(pessoa.veiculos.get(0))
 }
 
 fun main() {
