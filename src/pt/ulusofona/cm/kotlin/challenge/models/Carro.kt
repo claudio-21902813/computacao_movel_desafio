@@ -16,6 +16,10 @@ class Carro(identificador:String,val motor : Motor): Ligavel, Veiculo(identifica
         ligado = true
     }
 
+    override fun moverPara(x: Int, y: Int) {
+        posicao.alterarPosicaoPara(x, y)
+    }
+
     override fun desligar() {
         if(!estaLigado()){
             throw VeiculoDesligadoException("Veiculo Desligado!")
