@@ -11,7 +11,7 @@ class Bicicleta(identificador:String): Movimentavel,Veiculo(identificador) {
     override fun toString(): String {
 
         return "Bicicleta | " +
-                "$identificador |" +
+                "$identificador | " +
                 "${Data(dataDeAquisicao).converte()} |" +
                 "$posicao"
     }
