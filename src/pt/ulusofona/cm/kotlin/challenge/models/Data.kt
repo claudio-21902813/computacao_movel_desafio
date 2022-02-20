@@ -6,7 +6,7 @@ import java.time.format.DateTimeFormatter
 import java.util.*
 
 class Data(val data : Date){
-    var formato = SimpleDateFormat("dd-MM")
+    var formato = SimpleDateFormat("dd-MM-yyyy")
 
     fun converte() : String{
         return formato.format(data)
