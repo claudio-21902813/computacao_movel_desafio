@@ -10,8 +10,8 @@ class Bicicleta(identificador:String):Veiculo(identificador) {
 
         return "Bicicleta | " +
                 "$identificador | " +
-                "${Data(dataDeAquisicao).converte()} |" +
-                " $posicao"
+                "${Data(dataDeAquisicao).converte()} | " +
+                "$posicao"
     }
 
 }
