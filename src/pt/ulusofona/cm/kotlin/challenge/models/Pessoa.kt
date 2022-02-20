@@ -1,5 +1,7 @@
 package pt.ulusofona.cm.kotlin.challenge.models
 
+import pt.ulusofona.cm.kotlin.challenge.exceptions.AlterarPosicaoException
+import pt.ulusofona.cm.kotlin.challenge.exceptions.MenorDeIdadeException
 import pt.ulusofona.cm.kotlin.challenge.exceptions.VeiculoNaoEncontradoException
 import pt.ulusofona.cm.kotlin.challenge.interfaces.Movimentavel
 import java.text.SimpleDateFormat
@@ -32,7 +34,13 @@ class Pessoa(val nome:String,val dataDeNascimento:Date):Movimentavel{
         throw VeiculoNaoEncontradoException("Erro : Veiculo Não Encontrado")
     }
 
-    fun venderVeiculo(identificador: String,comprador:Pessoa){}
+    fun venderVeiculo(identificador: String,comprador:Pessoa){
+        val veiculo = pesquisarVeiculo(identificador)
+        veiculos.remove(veiculo)
+        if(veiculo!=null){
+            comprador.comprarVeiculo(veiculo)
+        }
+    }
 
     fun moverVeiculoPara(identificador: String,x:Int,y:Int){
         var idx = 0
@@ -53,10 +61,18 @@ class Pessoa(val nome:String,val dataDeNascimento:Date):Movimentavel{
         var ano = dataDeNascimento.toInstant().atZone(ZoneId.systemDefault()).toLocalDate().year
         if( (anoAtual - ano) >= 18){
             carta = Carta()
+        }else{
+            throw MenorDeIdadeException("Erro : Nao pode tirar a licenca de conducao")
         }
     }
 
+    fun mesmaPosicao(x: Int,y: Int) : Boolean{
+        return (x == posicao.x) && (y == posicao.y)
+    }
     override fun moverPara(x: Int, y: Int) {
+        if(mesmaPosicao(x, y)){
+            throw AlterarPosicaoException("Erro : Nao pode mover para mesma posicao")
+        }
         posicao.alterarPosicaoPara(x, y)
     }
 

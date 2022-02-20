@@ -26,12 +26,14 @@ fun testarCarta(){
     val sd = SimpleDateFormat("MM/dd/yyyy HH:mm:ss")
     val currentDate = sd.parse(currentDateString)
     val pessoa = Pessoa("tester",currentDate)
-    println(pessoa.temCarta())
-    pessoa.tirarCarta()
-    println(pessoa.temCarta())
-    val carro = Carro("Tesla", Motor(20,50))
-    pessoa.comprarVeiculo(carro)
-    println(pessoa.pesquisarVeiculo("Tesla"))
+    val carro3 = Carro("Tesla_3", Motor(20,50))
+    val carro1 = Carro("Tesla_1", Motor(20,50))
+    val carro2 = Carro("Tesla_2", Motor(20,50))
+    pessoa.comprarVeiculo(carro1)
+    pessoa.comprarVeiculo(carro2)
+    pessoa.comprarVeiculo(carro3)
+    pessoa.venderVeiculo("Tesla_2",pessoa)
+    println(pessoa.veiculos)
 }
 
 fun main() {
