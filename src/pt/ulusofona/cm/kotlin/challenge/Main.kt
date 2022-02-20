@@ -17,6 +17,14 @@ fun testarBicicleta(){
     println(pessoa.veiculos.get(0))
 }
 
+fun testarMotor(){
+    val motor = Motor(200,20)
+    motor.ligar()
+    println(motor.estaLigado())
+    println(motor)
+}
+
 fun main() {
-    testarBicicleta()
+    //testarBicicleta()
+    testarMotor()
 }
