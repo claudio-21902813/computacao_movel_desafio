@@ -36,7 +36,7 @@ class Pessoa(val nome:String,val dataDeNascimento:Date):Movimentavel{
         var idx = 0
         for(veiculo in veiculos){
             if(veiculo.identificador.equals(identificador)){
-                veiculos.get(idx).posicao.alterarPosicaoPara(x, y)
+                veiculos.get(idx).moverPara(x, y)
             }
             idx++
         }

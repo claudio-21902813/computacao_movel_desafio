@@ -7,14 +7,13 @@ import java.time.Month
 import java.util.*
 
 
-//import kotlin.test.assertEquals
+import kotlin.test.assertEquals
 
 fun testarBicicleta(){
     val bic = Bicicleta("LNupe")
     val pessoa = Pessoa("me",Date())
-    pessoa.comprarVeiculo(bic)
     pessoa.moverVeiculoPara("LNupe",0,5)
-    println(pessoa.veiculos.get(0))
+    assertEquals(bic,bic.moverPara(0, 5))
 }
 
 fun testarMotor(){
@@ -25,6 +24,6 @@ fun testarMotor(){
 }
 
 fun main() {
-    //testarBicicleta()
-    testarMotor()
+    testarBicicleta()
+    //testarMotor()
 }
