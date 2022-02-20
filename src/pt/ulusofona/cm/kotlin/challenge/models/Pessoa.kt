@@ -1,11 +1,12 @@
 package pt.ulusofona.cm.kotlin.challenge.models
 
+import pt.ulusofona.cm.kotlin.challenge.interfaces.Movimentavel
 import java.text.SimpleDateFormat
 import java.time.LocalDate
 import java.util.*
 import kotlin.collections.ArrayList
 
-class Pessoa(val nome:String,val dataDeNascimento:Date){
+class Pessoa(val nome:String,val dataDeNascimento:Date):Movimentavel{
     public var veiculos : MutableList<Veiculo>;
     public var carta : Carta?;
     public var posicao : Posicao;
@@ -44,9 +45,12 @@ class Pessoa(val nome:String,val dataDeNascimento:Date){
     fun temCarta():Boolean {return false}
 
     fun tirarCarta(){}
+    override fun moverPara(x: Int, y: Int) {
+        posicao.alterarPosicaoPara(x, y)
+    }
 
     override fun toString(): String {
-        return "Pessoa | $nome | ${Data(dataDeNascimento).converte()} | $posicao"
+        return "Pessoa | $nome | ${Data(dataDeNascimento).converte()} |$posicao"
     }
 
 }
