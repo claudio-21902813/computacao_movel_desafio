@@ -7,13 +7,17 @@ import pt.ulusofona.cm.kotlin.challenge.interfaces.Ligavel
 import pt.ulusofona.cm.kotlin.challenge.interfaces.Movimentavel
 import java.util.*
 
-abstract class Veiculo(val identificador:String){
+abstract class Veiculo(val identificador:String):Movimentavel{
     var posicao : Posicao;
     var dataDeAquisicao : Date;
 
     init {
         posicao = Posicao(0,0)
         dataDeAquisicao = Date()
+    }
+
+    override fun moverPara(x: Int, y: Int) {
+        posicao.alterarPosicaoPara(x, y)
     }
 
     open fun requerCarta():Boolean{

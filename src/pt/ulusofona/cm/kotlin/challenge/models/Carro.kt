@@ -5,7 +5,7 @@ import pt.ulusofona.cm.kotlin.challenge.exceptions.VeiculoLigadoException
 import pt.ulusofona.cm.kotlin.challenge.interfaces.Ligavel
 import pt.ulusofona.cm.kotlin.challenge.interfaces.Movimentavel
 
-class Carro(identificador:String,val motor : Motor): Ligavel, Movimentavel, Veiculo(identificador) {
+class Carro(identificador:String,val motor : Motor): Ligavel, Veiculo(identificador) {
 
     var ligado : Boolean = false
 
@@ -25,10 +25,6 @@ class Carro(identificador:String,val motor : Motor): Ligavel, Movimentavel, Veic
 
     override fun estaLigado(): Boolean {
         return ligado == true
-    }
-
-    override fun moverPara(x: Int, y: Int) {
-        posicao.alterarPosicaoPara(x,y)
     }
 
     override fun toString(): String {
