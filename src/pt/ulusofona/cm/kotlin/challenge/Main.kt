@@ -9,11 +9,5 @@ import java.util.*
 
 
 fun main() {
-    val pessoa = Pessoa("Tester", Date())
-    println(pessoa)
-    val v = Carro("Teste", Motor(100,50))
-    pessoa.comprarVeiculo(v)
 
-    //assertEquals(null,pessoa.pesquisarVeiculo("teste"))
-    //assertEquals(v,pessoa.pesquisarVeiculo("Teste"))
 }
