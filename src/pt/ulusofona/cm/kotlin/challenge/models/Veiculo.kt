@@ -1,5 +1,6 @@
 package pt.ulusofona.cm.kotlin.challenge.models
 
+import pt.ulusofona.cm.kotlin.challenge.exceptions.AlterarPosicaoException
 import pt.ulusofona.cm.kotlin.challenge.exceptions.VeiculoDesligadoException
 import pt.ulusofona.cm.kotlin.challenge.exceptions.VeiculoLigadoException
 import pt.ulusofona.cm.kotlin.challenge.exceptions.VeiculoNaoEncontradoException
@@ -17,6 +18,9 @@ open class Veiculo(val identificador:String):Movimentavel{
     }
 
     override fun moverPara(x: Int, y: Int) {
+        if(x == posicao.x && y == posicao.y){
+            throw AlterarPosicaoException("Erro : Nao pode mover para mesma posicao")
+        }
         posicao.alterarPosicaoPara(x, y)
     }
 

@@ -12,6 +12,8 @@ import java.util.*
 fun testarBicicleta(){
     val bic = Bicicleta("LNupe")
     val pessoa = Pessoa("me",Date())
+    bic.moverPara(0,2)
+    bic.moverPara(0,2)
 }
 
 fun testarMotor(){
@@ -37,7 +39,7 @@ fun testarCarta(){
 }
 
 fun main() {
-    //testarBicicleta()
+    testarBicicleta()
     //testarMotor()
-    testarCarta()
+    //testarCarta()
 }
