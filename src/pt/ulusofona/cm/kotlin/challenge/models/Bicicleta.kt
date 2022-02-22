@@ -6,11 +6,11 @@ import pt.ulusofona.cm.kotlin.challenge.interfaces.Movimentavel
 
 data class Bicicleta(val identificador1:String):Veiculo(identificador1) {
 
-    /*override fun toString(): String {
+    override fun toString(): String {
         return "Bicicleta | " +
                 "$identificador | " +
                 "${Data(dataDeAquisicao).converte()} | " +
                 "$posicao"
-    }*/
+    }
 
 }

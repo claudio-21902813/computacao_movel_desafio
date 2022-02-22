@@ -37,6 +37,10 @@ fun testarCarta(){
     println(pessoa.veiculos)
 }
 
+fun testarCarro(){
+
+}
+
 fun main() {
     testarBicicleta()
     //testarMotor()
