@@ -38,11 +38,14 @@ fun testarCarta(){
 }
 
 fun testarCarro(){
-
+    val pessoa = Pessoa("Teste",Date())
+    val carro = Carro("Mercedes Benz", Motor(20,50))
+    println(pessoa.temCarta())
 }
 
 fun main() {
-    testarBicicleta()
+    //testarBicicleta()
     //testarMotor()
     //testarCarta()
+    testarCarro()
 }

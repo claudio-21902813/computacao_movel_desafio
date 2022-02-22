@@ -32,7 +32,7 @@ data class Pessoa(val nome:String,val dataDeNascimento:Date):Movimentavel{
                 return veiculo
             }
         }
-        return null
+        throw VeiculoNaoEncontradoException("Erro : Veiculo Não Encontrado")
     }
 
     fun venderVeiculo(identificador: String,comprador:Pessoa){
@@ -47,7 +47,7 @@ data class Pessoa(val nome:String,val dataDeNascimento:Date):Movimentavel{
     }
 
     fun moverVeiculoPara(identificador: String,x:Int,y:Int){
-        var idx = 0
+       /* var idx = 0
         for(veiculo in veiculos){
             if(veiculo.identificador.equals(identificador)){
                 if(veiculo is Bicicleta){
@@ -61,6 +61,22 @@ data class Pessoa(val nome:String,val dataDeNascimento:Date):Movimentavel{
                 veiculos.get(idx).moverPara(x, y)
             }
             idx++
+        }*/
+        val veiculo = pesquisarVeiculo(identificador)
+        if(veiculo != null){
+            if(mesmaPosicao(x, y)){
+                throw AlterarPosicaoException("Erro : Nao pode mover para mesma posicao")
+            }
+
+            if(veiculo is Bicicleta){
+                veiculo.moverPara(x, y)
+            }
+            if(veiculo is Carro){
+                if(!temCarta()){
+                    throw PessoaSemCartaException("$nome não tem carta para conduzir o veículo indicado")
+                }
+                veiculo.moverPara(x, y)
+            }
         }
     }
 
