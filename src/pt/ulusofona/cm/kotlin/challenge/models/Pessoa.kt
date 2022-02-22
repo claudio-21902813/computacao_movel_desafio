@@ -43,6 +43,7 @@ data class Pessoa(val nome:String,val dataDeNascimento:Date):Movimentavel{
         veiculos.remove(veiculo)
         if(veiculo!=null){
             comprador.comprarVeiculo(veiculo)
+            veiculo.dataDeAquisicao = Date()
         }
     }
 

@@ -43,9 +43,23 @@ fun testarCarro(){
     println(pessoa.temCarta())
 }
 
+fun venda(){
+    val currentDateString = "02/27/2005 17:00:00"
+    val sd = SimpleDateFormat("MM/dd/yyyy HH:mm:ss")
+    val currentDate = sd.parse(currentDateString)
+    val pessoa1 = Pessoa("seller",Date())
+    val carro = Carro("Mercedes Benz", Motor(20,50))
+    pessoa1.comprarVeiculo(carro)
+    val pessoa2 = Pessoa("buyer",Date())
+    pessoa1.venderVeiculo("Mercedes Benz",pessoa2)
+    println(pessoa1.veiculos)
+    println(pessoa2.veiculos)
+}
+
 fun main() {
     //testarBicicleta()
     //testarMotor()
     //testarCarta()
-    testarCarro()
+    // testarCarro()
+    venda()
 }
