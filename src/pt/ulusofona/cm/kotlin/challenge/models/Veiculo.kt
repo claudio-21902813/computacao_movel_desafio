@@ -24,7 +24,5 @@ abstract class Veiculo(open val identificador:String):Movimentavel{
         posicao.alterarPosicaoPara(x, y)
     }
 
-    open fun requerCarta():Boolean{
-        return false;
-    }
+     abstract fun requerCarta():Boolean
 }
