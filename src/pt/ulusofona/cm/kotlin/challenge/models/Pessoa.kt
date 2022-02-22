@@ -65,7 +65,6 @@ data class Pessoa(val nome:String,val dataDeNascimento:Date):Movimentavel{
                 }
 
                 veiculo.moverPara(x, y)
-                veiculo.desligar()
             }
         }
     }

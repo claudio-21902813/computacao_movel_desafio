@@ -38,6 +38,7 @@ class Carro(identificador:String, val motor : Motor): Ligavel, Veiculo(identific
             throw AlterarPosicaoException("Erro : Nao pode mover para mesma posicao")
         }
         posicao.alterarPosicaoPara(x, y)
+        desligar()
     }
 
     override fun requerCarta(): Boolean {
