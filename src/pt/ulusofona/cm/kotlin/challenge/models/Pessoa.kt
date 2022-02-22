@@ -11,7 +11,7 @@ import java.time.ZoneId
 import java.util.*
 import kotlin.collections.ArrayList
 
-class Pessoa(val nome:String,val dataDeNascimento:Date):Movimentavel{
+data class Pessoa(val nome:String,val dataDeNascimento:Date):Movimentavel{
     public var veiculos : MutableList<Veiculo>;
     public var carta : Carta?;
     public var posicao : Posicao;

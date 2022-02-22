@@ -5,7 +5,7 @@ import pt.ulusofona.cm.kotlin.challenge.exceptions.VeiculoLigadoException
 import pt.ulusofona.cm.kotlin.challenge.interfaces.Ligavel
 import pt.ulusofona.cm.kotlin.challenge.interfaces.Movimentavel
 
-class Carro(identificador:String,val motor : Motor): Ligavel, Veiculo(identificador) {
+class Carro(identificador:String, val motor : Motor): Ligavel, Veiculo(identificador) {
 
     var ligado : Boolean = false
 
