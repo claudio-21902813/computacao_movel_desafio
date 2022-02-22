@@ -48,21 +48,6 @@ data class Pessoa(val nome:String,val dataDeNascimento:Date):Movimentavel{
     }
 
     fun moverVeiculoPara(identificador: String,x:Int,y:Int){
-       /* var idx = 0
-        for(veiculo in veiculos){
-            if(veiculo.identificador.equals(identificador)){
-                if(veiculo is Bicicleta){
-                    veiculos.get(idx).moverPara(x, y)
-                }
-                if(veiculo is Carro){
-                    if(!temCarta()){
-                        throw PessoaSemCartaException("$nome não tem carta para conduzir o veículo indicado")
-                    }
-                }
-                veiculos.get(idx).moverPara(x, y)
-            }
-            idx++
-        }*/
         val veiculo = pesquisarVeiculo(identificador)
         if(veiculo != null){
             if(mesmaPosicao(x, y)){

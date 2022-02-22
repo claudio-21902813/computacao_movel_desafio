@@ -9,6 +9,6 @@ data class Posicao(var x:Int,var y:Int){
     }
 
     override fun toString(): String {
-        return "Posicao | x:$x | y:$x"
+        return "Posicao | x:$x | y:$y"
     }
 }

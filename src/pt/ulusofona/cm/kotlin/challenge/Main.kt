@@ -54,10 +54,17 @@ fun venda(){
     pessoa1.moverVeiculoPara("Mercedes Benz",3,0)
 }
 
+fun pessoa(){
+    val pessoa1 = Pessoa("peropd",Date())
+    println(pessoa1)
+    pessoa1.moverPara(545112567 ,-1779101070)
+    println(pessoa1)
+}
+
 fun main() {
     //testarBicicleta()
     //testarMotor()
     //testarCarta()
     // testarCarro()
-    venda()
+    pessoa()
 }
