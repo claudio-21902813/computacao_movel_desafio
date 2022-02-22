@@ -47,10 +47,11 @@ fun venda(){
     val currentDateString = "02/27/2000 17:00:00"
     val sd = SimpleDateFormat("MM/dd/yyyy HH:mm:ss")
     val currentDate = sd.parse(currentDateString)
-    val pessoa1 = Pessoa("seller",Date())
+    val pessoa1 = Pessoa("seller",currentDate)
+    pessoa1.tirarCarta()
     val carro = Carro("Mercedes Benz", Motor(20,50))
     pessoa1.comprarVeiculo(carro)
-    pessoa1.moverVeiculoPara("Mercedes Benze",202,20)
+    pessoa1.moverVeiculoPara("Mercedes Benz",0,0)
 }
 
 fun main() {
