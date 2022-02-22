@@ -8,7 +8,7 @@ import pt.ulusofona.cm.kotlin.challenge.interfaces.Ligavel
 import pt.ulusofona.cm.kotlin.challenge.interfaces.Movimentavel
 import java.util.*
 
-open class Veiculo(val identificador:String):Movimentavel{
+open class Veiculo(open val identificador:String):Movimentavel{
     var posicao : Posicao;
     var dataDeAquisicao : Date;
 

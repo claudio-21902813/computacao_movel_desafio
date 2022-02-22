@@ -4,7 +4,7 @@ import pt.ulusofona.cm.kotlin.challenge.exceptions.VeiculoDesligadoException
 import pt.ulusofona.cm.kotlin.challenge.exceptions.VeiculoLigadoException
 import pt.ulusofona.cm.kotlin.challenge.interfaces.Movimentavel
 
-class Bicicleta(identificador:String):Veiculo(identificador) {
+data class Bicicleta( override val identificador:String):Veiculo(identificador) {
 
     override fun toString(): String {
         return "Bicicleta | " +
