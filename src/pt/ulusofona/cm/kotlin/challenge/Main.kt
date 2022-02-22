@@ -51,7 +51,7 @@ fun venda(){
     pessoa1.tirarCarta()
     val carro = Carro("Mercedes Benz", Motor(20,50))
     pessoa1.comprarVeiculo(carro)
-    pessoa1.moverVeiculoPara("Mercedes Benz",0,0)
+    pessoa1.moverVeiculoPara("Mercedes Benz",3,0)
 }
 
 fun main() {

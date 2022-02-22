@@ -28,6 +28,18 @@ class Carro(identificador:String, val motor : Motor): Ligavel, Veiculo(identific
         return ligado == true
     }
 
+    fun mesmaPosicao(x: Int,y: Int) : Boolean{
+        return (x == posicao.x) && (y == posicao.y)
+    }
+
+
+    override fun moverPara(x: Int, y: Int) {
+        if(mesmaPosicao(x, y)){
+            throw AlterarPosicaoException("Erro : Nao pode mover para mesma posicao")
+        }
+        posicao.alterarPosicaoPara(x, y)
+    }
+
     override fun requerCarta(): Boolean {
         return true
     }

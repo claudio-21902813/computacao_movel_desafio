@@ -17,12 +17,7 @@ abstract class Veiculo(open val identificador:String):Movimentavel{
         dataDeAquisicao = Date()
     }
 
-    override fun moverPara(x: Int, y: Int) {
-        if(x == posicao.x && y == posicao.y){
-            throw AlterarPosicaoException("Erro : Nao pode mover para mesma posicao")
-        }
-        posicao.alterarPosicaoPara(x, y)
-    }
+     abstract override fun moverPara(x: Int, y: Int)
 
      abstract fun requerCarta():Boolean
 }

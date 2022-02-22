@@ -74,7 +74,7 @@ data class Pessoa(val nome:String,val dataDeNascimento:Date):Movimentavel{
             }
 
             if(veiculo is Carro){
-
+                veiculo.ligar()
                 if(!temCarta()){
                     throw PessoaSemCartaException("$nome não tem carta para conduzir o veículo indicado")
                 }
